@@ -25,4 +25,4 @@
 
 3. **DynamoDB 설정**
    - 테이블 이름: `Reports`
-   - 파티션 키: `ReportId`, `String`
+   - 파티션 키: `ReportId`, {형식}: `String`
