@@ -1,6 +1,6 @@
-# raymond1203
-## Infra
-### 설정사항
+
+# Infra - s3ToDynamoDB
+## 설정사항
 
 1. **S3 설정**
     - Notification 사용
