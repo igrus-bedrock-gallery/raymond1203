@@ -1,8 +1,9 @@
 # raymond1203
 Infra
 # 설정사항
-1. S3 Notification 사용
-2. 버킷 정책 추가
+1. S3 설정
+    Notification 사용
+    버킷 정책 추가
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -14,8 +15,8 @@ Infra
         }
     ]
 }
-3. lambda IAM 설정
+2. lambda IAM 설정
    본인은 FullAccess로 S3, DynamoDB 설정해놓음
-4. DynamoDB 설정
+3. DynamoDB 설정
    테이블 이름: Reports
    파티션 키: ReportId
