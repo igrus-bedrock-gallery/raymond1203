@@ -13,12 +13,12 @@ logger.setLevel(logging.INFO)
 dynamodb = boto3.client('dynamodb')
 s3 = boto3.client('s3')
 apigw_management = boto3.client('apigatewaymanagementapi', 
-    endpoint_url=os.environ.get('WEBSOCKET_API_ENDPOINT'))
+    endpoint_url=os.environ.get('WEBSOCKET_API_ENDPOINT')) # WEBSOCKET_API_ENDPOINT는 환경변수로 설정(https://{APIGateway고유ID}.execute-api.ap-northeast-2.amazonaws.com/{스테이지 이름})
 
 # 상수 정의
 IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif']
 TEXT_EXTENSIONS = ['.txt']
-TABLE_NAME = os.environ.get('DYNAMODB_TABLE_NAME')
+TABLE_NAME = os.environ.get('DYNAMODB_TABLE_NAME') # DYNAMODB_TABLE_NAME는 환경변수로 설정
 
 def get_connection_id(report_id):
     """DynamoDB에서 Connection ID를 가져오는 함수"""
